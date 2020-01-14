@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!--    custom css-->
     <style>
-        .carouselCustom {
-            height: 500px;
+        /*.carouselCustom {*/
+        /*    height: 500px;*/
+        /*}*/
+        img {
+            /*width: auto;*/
+            /*height:360px;*/
+            /*background-repeat: repeat-x;*/
+        }
+        .carousel-caption > h5 {
+            color: black;
         }
     </style>
 </head>
@@ -32,15 +40,15 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="10000">
-                <img src="img/laptop-gray.jpg" class="d-block " alt="...">
+            <div class="carousel-item active img-fluid" data-interval="10000">
+                <img src="img/weatherMap-screenShot.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item" data-interval="10000">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="..." class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
