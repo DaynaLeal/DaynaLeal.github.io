@@ -30,13 +30,25 @@
             color: #B6E2D3;
             /*z-index: 0*/
         }
+        .customButton {
+            background-color: #152D2E;
+            color: #5D7772
+        }
+        .btnDiv {
+            display: flex;
+            flex-direction: row;
+
+        }
+        .displayNone{
+            display: none;
+        }
     </style>
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar customNavbar d-flex justify-content-center">
+    <nav class="navbar customNavbar d-flex justify-content-center sticky-top">
         <span class="navbar-brand mb-0 h1 customNavText">Dayna Leal</span>
-        <a class="navbar-brand customNavText" href="#">icon</a>
+        <a class="navbar-brand customNavText ml-auto " href="#">icon</a>
         <a class="navbar-brand customNavText" href="#">icon</a>
         <a class="navbar-brand customNavText" href="#">icon</a>
     </nav>
@@ -81,18 +93,68 @@
         </a>
     </div>
 
-<!--    featurettes start here-->
-    <div class="featuretteContainer">
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Heading</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda deserunt dignissimos doloremque esse fugit magni quaerat quam repudiandae sint!</p>
-            </div>
-            <div class="col-md-5">
-<!--                <img src="img/meAtPanera.JPEG" alt="">-->
+
+
+    <div class="container">
+
+        <!--    buttons start here-->
+        <div class="btnDiv mt-3 justify-content-around">
+            <button type="button" class="btn btn-lg customButton btnAboutMe">About Me</button>
+            <button type="button" class="btn btn-lg customButton btnProjects">Projects</button>
+            <button type="button" class="btn btn-lg customButton btnResume">Resume</button>
+            <button type="button" class="btn btn-lg customButton btnContact">Contact</button>
+        </div>
+
+        <div class="mainDiv">
+            <div id="hideAboutMe">
+                <!--    featurettes start here-->
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Heading</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda deserunt dignissimos doloremque esse fugit magni quaerat quam repudiandae sint!</p>
+                    </div>
+                    <div class="col-md-5">
+                        <!--                <img src="img/meAtPanera.JPEG" alt="">-->
+                    </div>
+                </div>
+                <!--        <hr class="featurette-divider">-->
+                <hr class="featurette-divider">
+                <div class="row featurette text-right">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Heading</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda deserunt dignissimos doloremque esse fugit magni quaerat quam repudiandae sint!</p>
+                    </div>
+                    <div class="col-md-5">
+                        <!--                <img src="img/meAtPanera.JPEG" alt="">-->
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Heading</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda deserunt dignissimos doloremque esse fugit magni quaerat quam repudiandae sint!</p>
+                    </div>
+                    <div class="col-md-5">
+                        <!--                <img src="img/meAtPanera.JPEG" alt="">-->
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+                <div class="row featurette text-right">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Heading</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda deserunt dignissimos doloremque esse fugit magni quaerat quam repudiandae sint!</p>
+                    </div>
+                    <div class="col-md-5">
+                        <!--                <img src="img/meAtPanera.JPEG" alt="">-->
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </div>
 
     <!--bootstrap javaScript links-->
@@ -101,8 +163,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--my js links-->
     <script src="keys.js"></script>
+    <script src="jquery-2.2.4.js"></script>
     <!--custom js-->
     <script>
+        $('.btnContact, .btnProjects, .btnResume').click(function(event){
+            $('#hideAboutMe').hide()
+        });
 
 
     </script>
