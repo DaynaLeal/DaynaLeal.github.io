@@ -1,0 +1,62 @@
+
+:root {
+    --main-bg-color: #B1B1B1;
+    --main-txt-color: #444444;
+    --main-pop-color: #F0E1DE;
+    --main-card-button: #747474;
+}
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Bitter', serif;
+    color: var(--main-txt-color)
+}
+/*.carouselCustom {*/
+/*    height: 500px;*/
+/*}*/
+.customNavbar {
+    background-color: var(--main-pop-color);
+    color: var(--main-txt-color)
+}
+.customProjectCards {
+    background-color: var(--main-pop-color);
+    color: var(--main-txt-color)
+}
+.customNavText{
+    color: var(--main-txt-color)
+}
+img {
+    /*filter: brightness(40%);*/
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(40%);
+}
+.carousel-words {
+    color: var(--main-pop-color);
+}
+.customButton {
+    background-color: var(--main-pop-color);
+    color: var(--main-txt-color)
+}
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+}
+.displayNone{
+    display: none;
+    visibility:inherit;
+    background-color:#d2d8c9;
+}
+.projectCardBtns {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color)
+}
+/*#hideProjects {*/
+/*    display: none;*/
+/*    visibility:inherit;*/
+/*    background-color:#d2d8c9;*/
+/*}*/
+/*.customIcon a:hover {*/
+/*     color: red;*/
+/* }*/
+/*.customIcon a:visited {*/
+/*    color: red;*/
+/*}*/
