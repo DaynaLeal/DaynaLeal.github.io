@@ -1,5 +1,6 @@
 $(document).ready(function(){
     "use strict";
+    $('a').attr('target', '_blank');
 
     //ABOUT ME PAGE
     $('.btnContact, .btnProjects, .btnResume').click(function(event){
