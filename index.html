@@ -10,57 +10,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 <!--    bootstrap stylesheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 <!--    custom css-->
     <style>
+        :root {
+            --main-bg-color: #B1B1B1;
+            --main-txt-color: #444444;
+            --main-pop-color: #F0E1DE;
+            --main-card-button: #747474;
+        }
         body {
-            background-color: #5D7772;
+            background-color: var(--main-bg-color);
+            font-family: 'Bitter', serif;
+            color: var(--main-txt-color)
         }
         /*.carouselCustom {*/
         /*    height: 500px;*/
         /*}*/
         .customNavbar {
-            background-color: #152D2E;
+            background-color: var(--main-pop-color);
+            color: var(--main-txt-color)
+        }
+        .customProjectCards {
+            background-color: var(--main-pop-color);
+            color: var(--main-txt-color)
         }
         .customNavText{
-            color: #B6E2D3;
+            color: var(--main-txt-color)
         }
         img {
-            filter: brightness(40%);
-            /*opacity: .6;*/
+            /*filter: brightness(40%);*/
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%) brightness(40%);
         }
         .carousel-words {
-            color: #B6E2D3;
-            /*z-index: 0*/
+            color: var(--main-pop-color);
         }
         .customButton {
-            background-color: #152D2E;
-            color: #5D7772
+            background-color: var(--main-pop-color);
+            color: var(--main-txt-color)
         }
         .btnDiv {
             display: flex;
             flex-direction: row;
-
         }
         .displayNone{
             display: none;
         }
+        .projectCardBtns {
+            background-color: var(--main-bg-color);
+            color: var(--main-txt-color)
+        }
+        /*.customIcon a:hover {*/
+        /*     color: red;*/
+        /* }*/
+        /*.customIcon a:visited {*/
+        /*    color: red;*/
+        /*}*/
     </style>
 </head>
 <body>
     <!--navbar-->
     <nav class="navbar customNavbar d-flex justify-content-center sticky-top">
         <span class="navbar-brand mb-0 h1 customNavText">Dayna Leal</span>
-        <a class="navbar-brand customNavText ml-auto" target=”_blank” href="https://github.com/DaynaLeal"><i class="fab fa-github"></i></a>
-        <a class="navbar-brand customNavText target=”_blank”" href="#"><i class="fab fa-linkedin"></i></a>
+        <a class="navbar-brand customNavText ml-auto customIcon" target=”_blank” href="https://github.com/DaynaLeal"><i class="fab fa-github"></i></a>
+        <a class="navbar-brand customNavText customIcon" target=”_blank” href="#"><i class="fab fa-linkedin"></i></a>
 <!--        <a class="navbar-brand customNavText" href="#">icon</a>-->
     </nav>
 
     <!--carousel-->
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade carouselCustom" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade carouselCustom" data-ride="carousel" data-interval="3000" data-keyboard="true" data-pause="hover" data-touch="true">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active carousel-words"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class="carousel-words"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class="carousel-words"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active img-fluid" data-interval="10000">
@@ -108,6 +132,7 @@
         </div>
 
         <div class="mainDiv">
+<!--            ABOUT ME-->
             <div id="hideAboutMe">
 
                 <h1 class="text-center">About Me</h1>
@@ -157,6 +182,90 @@
                     </div>
                 </div>
             </div>
+
+<!--            CARDS FOR PROJECT TAB-->
+            <div  id="hideProjects" class="cardContainer d-flex flex-row flex-wrap justify-content-center">
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3 customProjectCards" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn projectCardBtns">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -171,11 +280,23 @@
     <script src="jquery-2.2.4.js"></script>
     <!--custom js-->
     <script>
-        $('.btnContact, .btnProjects, .btnResume').click(function(event){
-            $('#hideAboutMe').hide()
-        });
-        $('.btnAboutMe').click(function(event){
-            $('#hideAboutMe').show();
+        //PROJECTS PAGE
+        $(document).ready(function(){
+            $('#hideProjects').hide();
+            $('.btnProjects').click(function(event){
+               $('#hideProjects').show()
+            });
+            $('.btnContact, .btnAboutMe, .btnResume').click(function(event){
+                $('#hideProjects').hide()
+            });
+
+            //ABOUT ME PAGE
+            $('.btnContact, .btnProjects, .btnResume').click(function(event){
+                $('#hideAboutMe').hide()
+            });
+            $('.btnAboutMe').click(function(event){
+                $('#hideAboutMe').show();
+            })
         })
 
 
