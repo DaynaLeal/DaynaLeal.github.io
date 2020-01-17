@@ -1,8 +1,8 @@
 
 :root {
-    --main-bg-color: #B1B1B1;
+    --main-bg-color: #F0E1DE;
     --main-txt-color: #444444;
-    --main-pop-color: #F0E1DE;
+    --main-gray-color: #B1B1B1;
     --main-card-button: #747474;
 }
 body {
@@ -14,12 +14,13 @@ body {
 /*    height: 500px;*/
 /*}*/
 .customNavbar {
-    background-color: var(--main-pop-color);
+    background-color: var(--main-gray-color);
     color: var(--main-txt-color)
 }
 .customProjectCards {
-    background-color: var(--main-pop-color);
-    color: var(--main-txt-color)
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+    border: white solid 5px;
 }
 .customNavText{
     color: var(--main-txt-color)
@@ -30,11 +31,12 @@ body {
     filter: grayscale(100%) brightness(40%);
 }
 .carousel-words {
-    color: var(--main-pop-color);
+    color: var(--main-bg-color);
 }
 .customButton {
-    background-color: var(--main-pop-color);
-    color: var(--main-txt-color)
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+    border: white solid 5px;
 }
 .btnDiv {
     display: flex;
@@ -46,8 +48,9 @@ body {
     background-color:#d2d8c9;
 }
 .projectCardBtns {
-    background-color: var(--main-bg-color);
-    color: var(--main-txt-color)
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+    border: white solid 5px;
 }
 /*#hideProjects {*/
 /*    display: none;*/
